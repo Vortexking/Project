@@ -3,6 +3,6 @@ prophet==1.0.1
 streamlit==1.8.1
 yfinance==0.1.70
 pystan==2.19.1.1
-cython==0.29.28
-numpy==1.22.2
-wheel==0.37.1
+
+
+

@@ -10,9 +10,9 @@ from plotly import graph_objs as go
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
-st.title('Stock Forecast App')
+st.title('Stock Prognostication App')
 
-stocks = ('GOOG', 'AAPL', 'MSFT', 'GME')
+stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and-p-500-companies/master/data/constituents_symbols.txt')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of prediction:', 1, 4)
@@ -28,7 +28,7 @@ def load_data(ticker):
 	
 data_load_state = st.text('Loading data...')
 data = load_data(selected_stock)
-data_load_state.text('Loading data... done!')
+
 
 st.subheader('Raw data')
 st.write(data.tail())

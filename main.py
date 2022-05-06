@@ -27,7 +27,7 @@ def load_data(ticker):
     return data
 
 	
-data_load_state = st.text('Loading data...')
+
 data = load_data(selected_stock)
 
 

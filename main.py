@@ -13,7 +13,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Prognostication App')
 
-stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and-p-500-companies/master/data/constituents_symbols.txt')
+stocks = pd.read_csv('https://raw.githubusercontent.com/Vortexking/Project/main/Symbol.txt')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of prediction:', 1, 4)

@@ -1,6 +1,7 @@
 plotly==5.7.0
+pystan==2.19.1.1
 prophet==1.0.1
-streamlit==1.8.1
+streamlit>=1.8.1
 yfinance==0.1.70
 pystan==2.19.1.1
 pandas<1.4.1
